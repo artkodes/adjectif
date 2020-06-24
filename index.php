@@ -52,8 +52,8 @@
             </div>
             <div class="_footer-right">
                 <div style="display: flex; flex-direction:column; align-items:center;">
-                    <h2>04 78 62 02 00</h2>
-                    <span style="margin-top: 10px; margin-bottom: 10px; font-size: 12px">batilyonpromotion.fr</span>
+                    <h2 style="font-family: 'Akrobat-Bold';">04 78 62 02 00</h2>
+                    <span style="margin-top: 10px; margin-bottom: 10px; font-size: 12px; font-family: 'Akrobat-Regular';">batilyonpromotion.fr</span>
                 </div>
                 <svg width="150" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 159.08 62.67">
                     <defs>

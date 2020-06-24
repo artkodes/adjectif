@@ -15,6 +15,17 @@
   src: url('../assets/fonts/Akrobat-ExtraBold.otf');
 }
 
+
+@font-face {
+  font-family: 'Akrobat-SemiBold';
+  src: url('../assets/fonts/Akrobat-SemiBold.otf');
+}
+
+@font-face {
+  font-family: 'Akrobat-Regular';
+  src: url('../assets/fonts/Akrobat-Regular.otf');
+}
+
 .wrapper {
   height: 100vh;
   //width: 100%;
@@ -152,12 +163,16 @@ a {
   font-size: 29px;
   margin-left: 60px;
   margin-top: 20px;
+  font-family: 'Akrobat-Bold';
+
 }
 
 ._footer-left p {
   font-size: 24px;
   margin-left: 60px;
   margin-top: 20px;
+  font-family: 'Akrobat-SemiBold';
+
 }
 
 ._footer-right {
