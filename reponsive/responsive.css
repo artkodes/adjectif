@@ -102,9 +102,6 @@
         grid-template-rows: 100px 1fr 280px;
   }
   .wrapper .logo-center {
-    position: absolute;
-    top: 27%;
-    left: 13%;
     width: 270px;
   }
   .wrapper ._footer {
@@ -231,9 +228,6 @@
     margin-left: 40px;
   }
   .wrapper .logo-center {
-    position: absolute;
-    top: 27%;
-    left: 27%;
     width: 270px;
   }
 }
@@ -281,9 +275,6 @@
     margin-left: 40px;
   }
   .wrapper .logo-center {
-    position: absolute;
-    top: 27%;
-    left: 30%;
     width: 270px;
   }
 }
@@ -315,9 +306,6 @@
     margin-left: 40px;
   }
   .wrapper .logo-center {
-    position: absolute;
-    top: 37%;
-    left: 10%;
     width: 370px;
   }
 }
@@ -330,9 +318,6 @@
     font-family: 'Akrobat-Bold';
   }
   .wrapper .logo-center {
-    position: absolute;
-    top: 30%;
-    left: 15%;
     width: 470px;
   }
   .wrapper #_h-span {
