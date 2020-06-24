@@ -1,0 +1,464 @@
+@import "../breakpoints/breakpoints.scss";
+
+$orange: #ff9b54;
+$purple: #ae76a6;
+$blue: #a3c3d9;
+$lOrange: #f8bd7f;
+$gray: #efefef;
+
+.wrapper {
+
+    // if the breakpoint is less than or equal to 360px
+    @include media("<=phone") {
+        grid-template-rows: 100px 1fr 420px;
+        grid-template-columns: 1fr;
+
+        .logo-center {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 270px;
+        }
+
+
+        ._footer {
+
+            grid-template-columns: 1fr;
+        }
+
+        #contact-p {
+            //width: 200px;
+        }
+
+        .form {
+            width: 200px;
+        }
+
+        ._footer-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            width: 300px;
+        }
+
+        ._footer-left {
+            width: 320px;
+            padding: 10px;
+            margin-left: 0;
+        }
+
+        ._container {
+            border-top: 10px solid #b99f5b;
+            border-bottom: 10px solid #b99f5b;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 400px 1fr;
+        }
+
+        ._contact-form {
+            width: 300px;
+            padding: 0;
+        }
+
+        .contact-p {
+            width: 100%;
+        }
+
+        ._logo {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            width: 80px;
+        }
+
+        #_h-h1 {
+            font-size: 13px;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            margin-top: 15 px;
+            font-family: 'Akrobat-Bold';
+            margin-left: 20px;
+
+
+        }
+
+        #_h-span {
+            font-size: 12px;
+            margin-left: 20px;
+        }
+
+        #h1 {
+            font-size: 15px;
+            text-align: justify;
+
+
+        }
+
+        #_footer-p {
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .form-input {
+            width: 300px;
+        }
+
+        .btn {
+            width: 320px;
+        }
+
+
+
+        // &:before {
+        //     content: "Phone viewport";
+        // }
+
+    }
+
+    // if the breakpoint is greater than 360px and less than or eqaul to 425px
+    @include media(">phone", "<=425px") {
+        grid-template-rows: 100px 1fr 280px;
+
+        .logo-center {
+            position: absolute;
+            top: 27%;
+            left: 13%;
+            width: 270px;
+        }
+
+        ._footer {
+            grid-template-columns: 1fr;
+
+        }
+
+        #contact-p {
+            margin-top: 0;
+            //width: 200px;
+        }
+
+        .form {
+            width: 200px;
+        }
+
+        ._footer-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+        }
+
+        ._footer-left {
+            padding: 10px;
+            margin-left: 0;
+        }
+
+        ._container {
+            border-top: 10px solid #b99f5b;
+            border-bottom: 10px solid #b99f5b;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 250px 1fr;
+        }
+
+        ._contact-form {
+            width: 334px;
+        }
+
+        .form-input {
+            width: 320px;
+        }
+
+        .btn {
+            width: 340px;
+        }
+
+        .contact-p {
+            width: 100%;
+        }
+
+        ._logo {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            width: 80px;
+        }
+
+        #_h-h1 {
+            font-size: 13px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            font-family: 'Akrobat-Bold';
+            margin-left: 20px;
+
+
+        }
+
+        #_h-span {
+            font-size: 10px;
+            margin-left: 20px;
+        }
+
+        #h1 {
+            font-size: 15px;
+            margin-left: 0;
+            //text-align: justify;
+
+
+        }
+
+        #_footer-p {
+            font-size: 12px;
+            margin-left: 0;
+            font-weight: bold;
+            //text-align: justify;
+        }
+
+
+        // &:before {
+        //     content: "Large phone stops at 420px";
+        // }
+
+    }
+
+    @include media(">425px", "<=580px") {
+        grid-template-rows: 150px 1fr 220px;
+
+
+
+        ._container {
+            border-top: 10px solid #b99f5b;
+            border-bottom: 10px solid #b99f5b;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        ._contact-form {
+            width: 100%;
+            padding: 40px;
+        }
+
+        .contact-p {
+            width: 100%;
+        }
+
+
+
+        #_h-h1 {
+            font-size: 25px;
+            margin-left: 100px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-family: 'Akrobat-Bold';
+            margin-left: 50px;
+
+
+        }
+
+        #_h-span {
+            font-size: 12px;
+            margin-left: 50px;
+        }
+
+        #h1 {
+            font-size: 18px;
+            margin-left: 40px;
+
+
+        }
+
+        #_footer-p {
+            font-size: 16px;
+            margin-left: 40px;
+        }
+
+        .logo-center {
+            position: absolute;
+            top: 27%;
+            left: 27%;
+            width: 270px;
+        }
+
+
+    }
+
+    // if the screen is going to be greater than 425px and less than or eqaul to 768px
+    @include media(">580px", "<=tablet") {
+
+        grid-template-rows: 150px 1fr 200px;
+
+        ._container {
+            border-top: 10px solid #b99f5b;
+            border-bottom: 10px solid #b99f5b;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        ._contact-form {
+            width: 100%;
+            padding: 40px;
+        }
+
+        .contact-p {
+            width: 100%;
+        }
+
+        #_h-h1 {
+            font-size: 30px;
+            margin-left: 100px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-family: 'Akrobat-Bold';
+            margin-left: 50px;
+
+
+        }
+
+        #_h-span {
+            font-size: 12px;
+            margin-left: 50px;
+        }
+
+        #h1 {
+            font-size: 18px;
+            margin-left: 40px;
+
+        }
+
+        #_footer-p {
+            font-size: 16px;
+            margin-left: 40px;
+        }
+
+        .logo-center {
+            position: absolute;
+            top: 27%;
+            left: 30%;
+            width: 270px;
+        }
+
+        // &:before {
+        //     content: "Ipad";
+        // }
+
+    }
+
+
+    @include media(">768px", "<=1000px") {
+
+
+
+        #_h-h1 {
+            font-size: 36px;
+            margin-left: 100px;
+            margin-bottom: 10px;
+            margin-top: 35px;
+            font-family: 'Akrobat-Bold';
+            margin-left: 50px;
+
+
+        }
+
+        #_h-span {
+            font-size: 20px;
+            margin-left: 50px;
+        }
+
+        #h1 {
+            font-size: 18px;
+            margin-left: 40px;
+
+        }
+
+        #_footer-p {
+            font-size: 16px;
+            margin-left: 40px;
+        }
+
+        .logo-center {
+            position: absolute;
+            top: 37%;
+            left: 10%;
+            width: 370px;
+        }
+
+        /* &:before {
+            content: "test2";
+        }*/
+
+    }
+
+
+    @include media(">1000px", "<=1230px") {
+
+        //background-color: #a3c3d9;
+
+        // &:before {
+        //     content: "iPad Pro";
+        // }
+
+        #_h-h1 {
+            font-size: 44px;
+            margin-left: 100px;
+            margin-bottom: 10px;
+            font-family: 'Akrobat-Bold';
+
+
+        }
+
+        .logo-center {
+            position: absolute;
+            top: 30%;
+            left: 15%;
+            width: 470px;
+        }
+
+        #_h-span {
+            font-size: 33px;
+            margin-left: 100px;
+        }
+
+
+
+        #h1 {
+            font-size: 26px;
+        }
+
+        #_footer-p {
+            font-size: 22px;
+        }
+
+    }
+
+    // if the screen is going to be greater than 768px and less than 1366px
+    @include media(">1230px", "<desktop") {
+
+
+
+        // &:before {
+        //     content: "Tablet to laptop/desktop viewport";
+        // }
+    }
+
+    // if the screen is going to be greater than or equal to 1366px
+    @include media(">=desktop") {
+
+        // &:before {
+        //     content: "Desktop viewport only";
+        // }
+
+    }
+
+    // if the screen is going to be greater than or equal to 1920px
+    @include media(">=LGdesktop", "retina2x") {
+
+        // &:before {
+        //     content: "Large desktop screen";
+        // }
+    }
+}

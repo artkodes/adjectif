@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+@font-face {
+  font-family: 'Akrobat-Bold';
+  src: url('../assets/fonts/Akrobat-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Akrobat-ExtraBold';
+  src: url('../assets/fonts/Akrobat-ExtraBold.otf');
+}
+
+.wrapper {
+  height: 100vh;
+  //width: 100%;
+  display: grid;
+  grid-template-rows: 150px 1fr 160px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-center {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  width: 470px;
+}
+
+
+._container {
+  border-top: 10px solid #b99f5b;
+  border-bottom: 10px solid #b99f5b;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+}
+
+._image {
+  background-image: url('../assets/img/BALTHAZAR_V4.jpg');
+  //    background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+._image::before {
+  background-color: rgba(14, 60, 92, 0.8);
+  content: '';
+  display: block;
+  height: 100%;
+}
+
+._logo {
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+._logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+._header {
+  background-color: #003c5c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+._header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+._header h1 {
+  font-size: 44px;
+  color: #b99f5b;
+  margin-left: 140px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: 'Akrobat-Bold';
+  letter-spacing: 4px;
+}
+
+._header span {
+  font-size: 33px;
+  color: white;
+  font-family: 'Akrobat-ExtraBold';
+  font-weight: lighter;
+  margin-left: 140px;
+  margin-bottom: 10px;
+}
+
+._contact-form {
+  width: 200px;
+  padding: 40px;
+}
+
+._contact-form p {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Akrobat-Bold';
+}
+
+.form-input {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #003c5c;
+  border: none;
+  color: white;
+  width: 200px;
+}
+
+.form-input:focus {
+  border: none;
+}
+
+.form-input::placeholder {
+  color: white;
+}
+
+.from-container {
+  width: 200px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px;
+  height: 33px;
+  width: 220px;
+  border-radius: 12px;
+  background-color: #b99f5b;
+  color: white;
+  border: none;
+}
+
+._footer-left h1 {
+  font-size: 29px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+._footer-left p {
+  font-size: 24px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+._footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  align-items: center;
+}
+
+._footer-right h2 {
+  font-size: 24px;
+}
+
+._footer-right span {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+._footer {
+  background-color: #003c5c;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+}
+
+.alert {
+  background: #ffdb9b;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  border-radius: 4px;
+  border-left: 8px solid #ffa502;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.alert.showAlert {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.alert.show {
+  animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+  0% {
+    transform: translateX(100%);
+  }
+
+  40% {
+    transform: translateX(-10%);
+  }
+
+  80% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.alert.hide {
+  animation: hide_slide 1s ease forwards;
+}
+
+@keyframes hide_slide {
+  0% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(0%);
+  }
+
+  80% {
+    transform: translateX(-10%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.alert .fa-exclamation-circle {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ce8500;
+  font-size: 30px;
+}
+
+.alert .msg {
+  padding: 0 20px;
+  font-size: 18px;
+  color: #ce8500;
+}
+
+.alert .close-btn {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffd080;
+  padding: 20px 18px;
+  cursor: pointer;
+}
+
+.alert .close-btn:hover {
+  background: #ffc766;
+}
+
+.alert .close-btn .fas {
+  color: #ce8500;
+  font-size: 22px;
+  line-height: 40px;
+}
